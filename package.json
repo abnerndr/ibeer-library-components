@@ -1,7 +1,8 @@
 {
   "name": "ibeer-library-components",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.1",
+  "description": "use para importar componentes pré prontos do ibeer",
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -40,5 +41,18 @@
     "rollup-plugin-postcss": "^4.0.1",
     "rollup-plugin-typescript2": "^0.30.0",
     "typescript": "4.7.4"
-  }
+  },
+
+  "main": "index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abnerndr/ibeer-library-components.git"
+  },
+  "keywords": [],
+  "author": "abnerndr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abnerndr/ibeer-library-components/issues"
+  },
+  "homepage": "https://github.com/abnerndr/ibeer-library-components#readme"
 }
