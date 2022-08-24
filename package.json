@@ -1,6 +1,6 @@
 {
   "name": "ibeer-library-components",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "use para importar componentes pré prontos do ibeer",
   "private": false,
   "scripts": {
@@ -48,7 +48,7 @@
     "type": "git",
     "url": "git+https://github.com/abnerndr/ibeer-library-components.git"
   },
-  "keywords": [],
+  "keywords": ["types.d.ts"],
   "author": "abnerndr",
   "license": "ISC",
   "bugs": {
