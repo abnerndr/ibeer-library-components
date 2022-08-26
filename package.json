@@ -1,6 +1,6 @@
 {
   "name": "ibeer-library-components",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "use para importar componentes pré prontos do ibeer",
   "private": false,
   "scripts": {
@@ -43,7 +43,7 @@
     "typescript": "4.7.4"
   },
 
-  "main": "index.ts",
+  "main": "next.config.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/abnerndr/ibeer-library-components.git"
