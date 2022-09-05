@@ -1,8 +1,8 @@
-import React, { useMemo } from 'react';
-import './button.css';
+import React, { useMemo } from "react";
+import "./button.css";
 
-interface ButtonProps {
-  color?: 'red' | 'green' | 'blue' | 'primary'
+export interface ButtonProps {
+  color?: "red" | "green" | "blue" | "primary";
   /**
    * Is this the principal call to action on the page?
    */
@@ -13,12 +13,12 @@ interface ButtonProps {
   /**
    * How large should the button be?
    */
-  size?: 'small' | 'medium' | 'large' | 'full';
+  size?: "small" | "medium" | "large" | "full";
   /**
    * Button contents
    */
   value: string;
-  type: 'button' | 'submit'
+  type: "button" | "submit";
   /**
    * Optional click handler
    */
@@ -29,22 +29,25 @@ interface ButtonProps {
  * Primary UI component for user interaction
  */
 export const Button = ({
-  color = 'primary',
+  color = "primary",
   primary = false,
-  size = 'medium',
+  size = "medium",
   value,
   type,
   ...props
 }: ButtonProps) => {
+  const buttonSize = useMemo(
+    () =>
+      (size === "small" && "w-sm") ||
+      (size === "medium" && "w-md") ||
+      (size === "large" && "w-lg") ||
+      (size === "full" && "w-full"),
+    [size]
+  );
 
-  const buttonSize = useMemo(() => 
-  size === 'small' && 'w-sm' ||
-  size === 'medium' && 'w-md' ||
-  size === 'large' && 'w-lg' ||
-  size === 'full' && 'w-full'
-     , [size])
-
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  const mode = primary
+    ? "storybook-button--primary"
+    : "storybook-button--secondary";
   return (
     <button
       type={type}
