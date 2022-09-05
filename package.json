@@ -1,6 +1,6 @@
 {
   "name": "ibeer-library-components",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "use para importar componentes pré prontos do ibeer",
   "private": false,
   "scripts": {
